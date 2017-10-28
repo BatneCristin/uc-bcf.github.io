@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>TestPage</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    var captchaText;
+    $(function() {
+      var pre = $('#captcha');
+      captchaText = pre.text();
+      pre.text('');
+
+      var lines = ['', '', '', '', '']
+      for (var ixLetter = 0; ixLetter < captchaText.length; ixLetter++)
+      { 
+        var letter = captchaText.substr(ixLetter, 1);
+
+        var letterLines = letters[letter];
+        for (var ix = 0; ix < 5; ix++)
+        {
+          lines[ix] = lines[ix] + '  ' + letterLines[ix];
+        }
+      }
+      for (var ix = 0; ix < 5; ix++)
+      {
+        pre.append(lines[ix] + '\n');
+      }
+    });
+    function check() 
+    {
+      if ($('#captchaCheck').val() == captchaText) 
+      {
+        alert('you are probably human');
+      }
+      else 
+      {
+        alert('you probably made a mistake. Don\'t worry. To err is also human.');
+      }
+    }
+    var letters = {
+      h: [
+        'HH  HH',
+        'HH  HH',
+        'HHHHHH',
+        'HH  HH',
+        'HH  HH'
+      ],
+      i: [
+        'II',
+        'II',
+        'II',
+        'II',
+        'II'  
+      ]
+      // etc
+    }        
+
+    </script>
+  </head>
+  <body>
+    <pre id="captcha">hi</pre>
+    Please type what you see: <input id="captchaCheck"/> <input type="button" value="Check" onclick="check()"/>
+  </body>
+</html>

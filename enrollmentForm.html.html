@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Enrollment Form:</h1>
+<form id="frm1" action="/action_page.php">
+  <p>Choose your course</p>
+  <form>
+<select id="mySelect">
+  <option>College of Information Technology and Computer Science</option>
+  <option>College of Engineering and Architecture</option>
+  <option>College of Nursing</option>
+  <option>College of Business Administration</option>
+  <option>College of Tourism Management</option>
+  <option>College of Hotel and Restaurant Management</option>
+   <option>College of Education</option>
+    <option>College of Accounting</option>
+     <option>College of Law and Political Science</option>
+</select>
+<br><br>
+
+<form id="frm1" action="/action_page.php">
+	<h3> Personal Data:</h3>
+  First name: <input type="text" name="fname">
+    Last name: <input type="text" name="lname">
+  Middle name: <input type="text" name="mname"><br><br>
+  Date of Birth: <input type="text" number="dbirth">
+    Place of Birth: <input type="text" name="dbirth"><br><br>
+
+  
+ 
+  Address: <input type="text" name="address">
+   City: <input type="text" name="city"> 
+   Province: <input type="text" name="province"><br><br>
+
+  Citizenship: <input type="text" name="cship">
+  Religion: <input type="text" name="rgion">
+  Civil Status: <input type="text" name="cstatus">
+  Age: <input type="text" name="lname">
+Gender: <input type="text" name="gender"><br><br>
+
+  Landline: <input type="text" name="tnumber">
+  Mobile number: <input type="text" name="mnumber">
+   Email: <input type="text" name="email"><br><br>
+
+<form id="frm1" action="/action_page.php">
+<h3>Educational Data:</h3>
+Name of School Last Attended: <input type="text" name="gender">
+School Address: <input type="text" name="saddress"><br><br>
+Year of Graduation: <input type="text" name="yrgrad">
+Honors Recieved: <input type="text" name="honors">
+<br><br>
+
+
+<h4>For transferees</h4>
+Last School Attended(college): <input type="text" name="lschool2"><br><br>
+School Year: <input type="text" name="slyear"><br><br>
+Course: <input type="text" name="course"><br><br>
+
+<form id="frm1" action="/action_page.php">
+<h3>Family Data:</h3>
+Name of Father: <input type="text" name="father"><br><br>
+Educational Attainment: <input type="text" name="edattain">
+Occupation: <input type="text" name="occupation"><br><br>
+Tel/Mobile number: <input type="text" name="fathernum">
+Religion:<input type="text" name="fatherrel"><br><br>
+
+
+Name of Mother: <input type="text" name="mother"><br><br>
+Educational Attainment: <input type="text" name="edattain2">
+Occupation: <input type="text" name="occupation2"><br><br>
+Tel/Mobile number: <input type="text" name="mothernum">
+Religion:<input type="text" name="motherrel"><br><br>
+
+<p>If applicant is living with Guardian:</p>
+Name of Guardian: <input type="text" name="guardian">
+Relationship: <input type="text" name="relationship"><br><br>
+Email: <input type="text" name="email2">
+telephone/mobile: <input type="text" name="telmob"><br><br>
+<p>Do you have siblings who are currently enrolled in University of the Cordilleras</p>
+Yes/No:<input type="text" name="y/n"><br><br>
+
+  Name:<input type="text" name="name2"><br><br>
+  <p>How did you know about university of the Cordilleras</p>
+  
+  <form>
+<select id="mySelect">
+  <option>Television</option>
+  <option>Newspaper</option>
+  <option>Online</option>
+  <option>Social media</option>
+  <option>School Visit</option>
+  <option>Others</option>
+</select>
+<br><br>
+
+<p>I hereby Certify that I have read and understood all the instructions and procedures concerning this application. Furthermore, I also certify that all information supplied herein are complete and accurate. I fully understand that all documents submitted in support of this application become the property of University of the Cordilleras and will therefore no be returned to the applicant</P><br><br>
+
+  <p>_________________</p>                
+  <p>Signature of Applicant</p>  
+  <p>_________________</p>
+  <p>Signature of Parent/Guardian</p>      
+
+
+   
+
+
+
+  <script>
+function openWin() {
+    window.open("verificationenrollment.html");
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Submit" onclick="openWin()">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+
+</script>
+
+</body>
+</html>
