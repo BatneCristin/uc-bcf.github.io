@@ -11,7 +11,7 @@
 }
 .footer{
 	padding-top: 15px;
-	position: absolute;
+	position: relative;
     height: 100px;
     bottom: 0;
     width: 100%;
