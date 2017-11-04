@@ -23,11 +23,11 @@
 	min-height: auto;
 }
 .row{
-	font-size: 11px;
+	font-size: 15px;
 	font-family: "Century Gothic";
 }
 .dropdown-menu{
-	font-size: 11px;
+	font-size: 12px;
 }
 * {box-sizing:border-box}
 
@@ -52,7 +52,7 @@
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -107,9 +107,9 @@
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.0s;
 }
 
 @-webkit-keyframes fade {
